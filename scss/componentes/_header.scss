@@ -1,0 +1,257 @@
+@import '../variables'; 
+
+/*mixin */
+
+@mixin prefijos-transform ($propiedad, $propiedad2) {
+    -webkit-transform: $propiedad;
+    -o-transform: $propiedad;
+    -moz-transform: $propiedad;
+    transform:$propiedad;
+    -webkit-transform-style:$propiedad2;
+    -o-transform-style: $propiedad2;
+    -moz-transform-style: $propiedad2;
+    transform-style:$propiedad2;
+}
+
+@mixin prefijos-animation ($propiedad1, $propiedad2) { 
+-webkit-animation-duration: $propiedad1;
+-o-animation-duration: $propiedad1;
+-moz-animation-duration: $propiedad1;
+animation-duration:$propiedad1;
+-webkit-animation-name:$propiedad2;
+-o-animation-name:$propiedad2;
+-moz-animation-name:$propiedad2;
+animation-name:$propiedad2;
+}
+
+
+/* animation-duration: 3s;
+animation-name: aparecer; */
+
+/* todos los Header  */
+
+header { border: $bordes;
+    font-family: $title-font;
+
+}
+
+/*IMAGEN HEADER INDEX */
+
+.header-index {
+    background-image: url('../../fotos\ de\ productos/headerindex.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.logo-mucha-madera {    
+     @extend %header-armado;
+
+ img { 
+   @extend %logo;
+}
+
+} 
+
+.logo:hover {
+@include prefijos-transform (rotateY(180deg),preserve-3d); 
+
+}
+
+.titulo-cabecera { 
+  @include prefijos-animation(3s,aparecer);
+    font-size: 100px;
+    padding: 80px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+
+/* animation-duration: 3s;
+animation-name: aparecer; */
+
+@keyframes aparecer {
+    0% { 
+        opacity: 0;
+    }
+    100% {
+        opacity: 1; 
+    }
+    }
+    
+ /* barra de menu index  */    
+    
+    .barra-de-menu-index { 
+       @extend %header-armado; 
+    }
+
+    @media only screen and (max-widht:576px) {
+        .barra-de-menu-index {
+            flex-direction:column; 
+            display:flex;
+        }
+    
+    }
+    
+    .barra-de-menu ul {
+        list-style: none;
+        font: size 0;
+    }
+    
+    li {
+        display: inline-block;
+        width: 15%;
+        position: relative;
+        font-size: 15px;
+        list-style: none;
+        padding: 2 em;
+        margin: 2rem;
+        word-spacing: 2px;
+        text-align: center;
+    }
+    
+    /* submenu */
+    ul ul {
+        position: absolute;
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1.5s;
+    }
+    
+    ul ul li {
+        display: block;
+        text-align: center;
+    }
+    
+    li:hover ul {
+        display: block;
+        text-decoration: underline;
+        visibility: visible;
+        opacity: 1;
+    
+    }
+    
+    .barra-de-menu li a:hover {
+        text-decoration: underline;
+    
+    }
+    
+    a {
+        color: black;
+        display: block;
+        text-decoration: none;
+    
+    }
+
+    /*Header nosotros */ 
+
+
+.header-nosotros {
+    background-image: url('../../fotos\ de\ productos/manosierradebanco.jpg');
+    padding: 400px;
+    border: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nuestro-taller h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+}
+    
+.nuestro-taller p {
+    color: aliceblue;
+    padding: 20px;
+    font-size: 20px;      
+}
+
+
+/*header Faq*/ 
+
+.header-faq img { 
+    @extend %logo;
+}
+
+.logo-mm:hover { 
+   @include prefijos-transform (rotateY(180deg),preserve-3d); 
+}
+
+.header-faq nav {
+    text-align: center;
+    font-family: $title-font;
+}
+
+h1 {
+    @include prefijos-animation(3s,aparecer);
+    font-size: 100px;
+    padding: 80px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+ul li {
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    word-spacing: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px;
+}
+
+.barra-de-menu-faq {
+    position: sticky;
+    top: 0;
+}
+
+
+/*HEADER PRODUCTOBT */ 
+
+
+.titulo-cabecera-producto  {    
+   @extend %header-armado;
+
+   h1 {
+    @include prefijos-animation(3s,aparecer);
+    font-size: 100px;
+    padding: 80px;
+    text-align: center;
+    border-radius: 16px;
+   }
+ img { 
+   @extend %logo; 
+}
+ 
+} 
+
+.titulo-cabecera-producto:hover img {
+    @include prefijos-transform(rotateY(180deg),preserve-3d)
+}
+
+
+.barra-de-menu-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    ul li {
+        font-family: $title-font;
+        font-weight: bold;
+        word-spacing: 10px;
+    }
+}
+
+
+/*HEADER LOGIN */
+
+
+/* BARRA DE MENU LOGIN */
+
+ 
+.barra-de-menu-login { 
+  @extend %header-armado; 
+}

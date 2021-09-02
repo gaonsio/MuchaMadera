@@ -1,0 +1,110 @@
+/* main index */
+/*busca tu producto button*/
+
+.busca-tu-producto {  
+    
+    background-image: url('../../fotos\ de\ productos/fondo1.jpg');
+
+
+p {
+    font-family: $title-font;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+}
+
+.destacados-del-mes {
+
+    font-family: $title-font;
+
+    h2 {
+        text-align: center;
+        padding: 50px;
+        @extend %grid;
+    }
+
+}
+
+
+
+.productos  { 
+    display:flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+}
+
+.productos:hover .perchero-transform  {-webkit-transform:scale(1.3);transform:scale(1.3);} 
+.productos:hover .macetas-transform {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.productos:hover .porta-maceta-transform {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.productos:hover .huertas-balcon-transform {-webkit-transform:scale(1.3);transform:scale(1.3);}
+
+.productos {overflow:hidden;}    
+
+
+
+/*query mobile */
+
+@media only screen and (max-width:576px) {
+    .productos { display: block;
+                 flex-direction: column;
+    
+    }
+
+
+}
+
+/* main FAQ */
+
+
+.section-faq h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: $title-font; 
+    padding: 15px;
+
+    ul li {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: $title-font2;
+        text-align: center;
+
+
+        p {
+            font-size: 18px;
+            font-family: $title-font2;
+            text-align: center;
+            word-spacing: 8px;
+        }
+
+    }
+}
+
+/*main productobt */
+
+.nuestros-productosbt {
+    @extend %grid;
+}
+
+
+/*main nosotros */
+
+
+.donde-estamos {
+    @extend %grid;
+
+    h2 {
+        font-size: 20;
+        text-align: center;
+        padding: 50px;
+    }
+
+    p {
+        font-size: 18px;
+        text-align: center;
+        color: black;
+        padding:30px;
+    }
+}

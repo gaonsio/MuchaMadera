@@ -1,0 +1,28 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header,
+section,
+footer,
+aside {
+    border: 1px solid darkgrey;
+    display: block;
+
+}
+
+.titulo-cabecera,
+.barra-de-menu,
+.nuestro-taller,
+.destacados-del-mes,
+.donde-estamos,
+.header-FAQ,
+.titulo-login {
+    font-family: 'Architects Daughter', cursive;
+
+}

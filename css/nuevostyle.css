@@ -1,0 +1,502 @@
+/*mixin */
+/* animation-duration: 3s;
+animation-name: aparecer; */
+/* todos los Header  */
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Rock+Salt&display=swap");
+header {
+  border: 1px solid darkgrey;
+  font-family: "Architects Daughter", cursive;
+}
+
+/*IMAGEN HEADER INDEX */
+.header-index {
+  background-image: url("../../fotos de productos/headerindex.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.logo:hover {
+  -webkit-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.titulo-cabecera {
+  -webkit-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+  -o-animation-name: aparecer;
+  -moz-animation-name: aparecer;
+  animation-name: aparecer;
+  font-size: 100px;
+  padding: 80px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+/* animation-duration: 3s;
+animation-name: aparecer; */
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* barra de menu index  */
+@media only screen and (max-widht: 576px) {
+  .barra-de-menu-index {
+    flex-direction: column;
+    display: flex;
+  }
+}
+.barra-de-menu ul {
+  list-style: none;
+  font: size 0;
+}
+
+li {
+  display: inline-block;
+  width: 15%;
+  position: relative;
+  font-size: 15px;
+  list-style: none;
+  padding: 2 em;
+  margin: 2rem;
+  word-spacing: 2px;
+  text-align: center;
+}
+
+/* submenu */
+ul ul {
+  position: absolute;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+ul ul li {
+  display: block;
+  text-align: center;
+}
+
+li:hover ul {
+  display: block;
+  text-decoration: underline;
+  visibility: visible;
+  opacity: 1;
+}
+
+.barra-de-menu li a:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
+/*Header nosotros */
+.header-nosotros {
+  background-image: url("../../fotos de productos/manosierradebanco.jpg");
+  padding: 400px;
+  border: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.nuestro-taller h1 {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  color: aliceblue;
+}
+
+.nuestro-taller p {
+  color: aliceblue;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/*header Faq*/
+.logo-mm:hover {
+  -webkit-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.header-faq nav {
+  text-align: center;
+  font-family: "Architects Daughter", cursive;
+}
+
+h1 {
+  -webkit-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+  -o-animation-name: aparecer;
+  -moz-animation-name: aparecer;
+  animation-name: aparecer;
+  font-size: 100px;
+  padding: 80px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+ul li {
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  word-spacing: 20px;
+  text-align: center;
+  text-decoration: none;
+  padding: 30px;
+}
+
+.barra-de-menu-faq {
+  position: sticky;
+  top: 0;
+}
+
+/*HEADER PRODUCTOBT */
+.titulo-cabecera-producto h1 {
+  -webkit-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+  -o-animation-name: aparecer;
+  -moz-animation-name: aparecer;
+  animation-name: aparecer;
+  font-size: 100px;
+  padding: 80px;
+  text-align: center;
+  border-radius: 16px;
+}
+.titulo-cabecera-producto:hover img {
+  -webkit-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.barra-de-menu-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+.barra-de-menu-productos ul li {
+  font-family: "Architects Daughter", cursive;
+  font-weight: bold;
+  word-spacing: 10px;
+}
+
+/*HEADER LOGIN */
+/* BARRA DE MENU LOGIN */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+section,
+footer,
+aside {
+  border: 1px solid darkgrey;
+  display: block;
+}
+
+.titulo-cabecera,
+.barra-de-menu,
+.nuestro-taller,
+.destacados-del-mes,
+.donde-estamos,
+.header-FAQ,
+.titulo-login {
+  font-family: "Architects Daughter", cursive;
+}
+
+/* FOOTER INDEXHTML */
+.footer-index {
+  background-color: #8b7c82;
+}
+
+.footer-index i {
+  padding: 15px;
+}
+.footer-index i p {
+  text-align: center;
+}
+
+.barra-de-menu-footer {
+  background-color: #8b7c82;
+}
+
+/* footer nosotros */
+#footer-nosotros {
+  background-color: grey;
+}
+
+/*footer faq*/
+.footer-faq {
+  background-color: #8b7c82;
+}
+
+/* main index */
+/*busca tu producto button*/
+.busca-tu-producto {
+  background-image: url("../../fotos de productos/fondo1.jpg");
+}
+.busca-tu-producto p {
+  font-family: "Architects Daughter", cursive;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+.destacados-del-mes {
+  font-family: "Architects Daughter", cursive;
+}
+.destacados-del-mes h2 {
+  text-align: center;
+  padding: 50px;
+}
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.productos:hover .perchero-transform {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.productos:hover .macetas-transform {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.productos:hover .porta-maceta-transform {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.productos:hover .huertas-balcon-transform {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.productos {
+  overflow: hidden;
+}
+
+/*query mobile */
+@media only screen and (max-width: 576px) {
+  .productos {
+    display: block;
+    flex-direction: column;
+  }
+}
+/* main FAQ */
+.section-faq h2 {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Architects Daughter", cursive;
+  padding: 15px;
+}
+.section-faq h2 ul li {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.section-faq h2 ul li p {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  word-spacing: 8px;
+}
+
+/*main productobt */
+/*main nosotros */
+.donde-estamos h2 {
+  font-size: 20;
+  text-align: center;
+  padding: 50px;
+}
+.donde-estamos p {
+  font-size: 18px;
+  text-align: center;
+  color: black;
+  padding: 30px;
+}
+
+/* body login */
+.body-login {
+  background-image: url("../../fotos de productos/fondo1.jpg");
+}
+
+/*body preguntas frecuentes*/
+.body-faq {
+  background-image: url("../../fotos de productos/fondo1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*body producto */
+.body-producto {
+  background-image: url("../../fotos de productos/fondo1.jpg");
+}
+
+/* grid index */
+.grid-container-fondo-index {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin: 30px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px chocolate;
+}
+
+/*comienzo del GRID que separa los productos del footer*/
+/* media query para la parte grid-flex*/
+@media only screen and (max-width: 576px) {
+  .grid-container-fondo-index {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*
+.grid-container-fondo-index div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+
+}
+*/
+.troncos-apilados,
+.fondo-rombo,
+.fondo-tres,
+.fondo-madera-turquesa,
+.tabla,
+.foto-fondo-uno,
+.palets {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* GRIDS DIVS INDEX */
+.grid-div-1-index {
+  grid-area: 1/1/6/2;
+}
+
+.grid-div-2-index {
+  grid-area: 1/2/4/3;
+}
+
+.grid-div-3-index {
+  grid-area: 1/3/4/4;
+}
+
+.grid-div-4-index {
+  grid-area: 1/4/4/5;
+}
+
+.grid-div-5-index {
+  grid-area: 1/5/4/6;
+}
+
+.grid-div-6-index {
+  grid-area: 4/4/6/6;
+}
+
+.grid-div-7-index {
+  grid-area: 4/2/6/4;
+}
+
+/* Extends */
+/*los Extends lo use en los archivos _footer y _header */
+.footer-index i ul, .barra-de-menu-footer, #footer-nosotros li, .barra-de-menu-footer-faq {
+  text-align: center;
+  font: 15px bold;
+  font-family: "Architects Daughter", cursive;
+  list-style: none;
+  word-spacing: 30px;
+  background-color: rgb 139, 124, 130;
+  font-family: "Architects Daughter", cursive;
+}
+
+.logo-mucha-madera img, .header-faq img, .titulo-cabecera-producto img {
+  height: 10em;
+  width: 8em;
+  border-radius: 1em;
+}
+
+.logo-mucha-madera, .barra-de-menu-index, .titulo-cabecera-producto, .barra-de-menu-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.destacados-del-mes h2, .nuestros-productosbt, .donde-estamos {
+  background-color: #FEE140;
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+}
+
+/*los mixin estan en el archivo _header.scss */
+/*
+@mixin prefijos-transform ($propiedad, $propiedad2) {
+    -webkit-transform: $propiedad;
+    -o-transform: $propiedad;
+    -moz-transform: $propiedad;
+    transform:$propiedad;
+    -webkit-transform-style:$propiedad2;
+    -o-transform-style: $propiedad2;
+    -moz-transform-style: $propiedad2;
+    transform-style:$propiedad2;
+}
+
+*/
+/*
+-webkit-transform: rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(180deg);
+transform-style: preserve-3d; */
+
+/*# sourceMappingURL=nuevostyle.css.map */
