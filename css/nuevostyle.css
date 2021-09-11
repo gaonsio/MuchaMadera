@@ -338,6 +338,58 @@ aside {
 }
 
 /*main productobt */
+.wrap {
+  width: 1100px;
+  margin: 50px auto;
+}
+
+.tarjeta-wrap {
+  -webkit-perspective: 800;
+  -moz-perspective: 800;
+  -ms-perspective: 800;
+  perspective: 800;
+  font-family: "Architects Daughter", cursive;
+}
+
+.tarjeta {
+  width: 300px;
+  height: 350px;
+  background-color: #E9967A;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.7s ease;
+  -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  -ms-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+}
+
+.adelante, .atras {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.atras {
+  transform: rotateY(180deg);
+}
+
+.tarjeta-wrap:hover .tarjeta {
+  transform: rotateY(180deg);
+}
+
+.card1 {
+  background-image: url(../../fotos\ de\ productos/perchero-repisa.jpg);
+}
+
+/* 
+transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; */
 /*main nosotros */
 .donde-estamos h2 {
   font-size: 20;
