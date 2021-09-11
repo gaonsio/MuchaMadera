@@ -28,7 +28,11 @@
     <meta property="og:description" content="Mucha Madera / Preguntas Frecuentes"> 
     <meta property="og:author" content="Gaby Aonsio">
 
-    <!--Aca va el Css-->
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <!--Aca va el Css-->
     <link rel="stylesheet" href="css/nuevostyle.css">
 
     <title> Mucha Madera / Preguntas Frecuentes </title>
@@ -45,7 +49,7 @@
             <h1> MUCHA MADERA</h1>
 
             <!-- Barra de Menú de FAQs-->
-            <section>
+            <section class="container">
                 <ul class="barra-de-menu-faq">
                     <li> <a href="index.html"> INICIO</a></li>
                     <li> <a href="nosotros.html"> NOSOTROS</a></li>
@@ -56,14 +60,14 @@
         </nav>
     </header>
 
-    <!-- Sección de Preguntas y respuestas -->
+    <!-- Sección de Preguntas y respuestas hechas con un grid de BT -->
 
-    <main class="container alto-100 bg-dark d-flex justify-content-center align-items-center">
+    <main class="container alto-100 bg-dark d-flex justify-content-center align-items-center my-5">
         <div class="row">
           <div class="col-12 col-lg-9">
             <div class="row">
-              <div class="col-12 col-lg-8 p-2">
-                <article class="card shadow h-100 bg-success">
+              <div class="col-12 col-lg-8 p-2"> <!--si yo pongo col solo sin breakpoint me toma mobile-->
+                <article class="card shadow h-100 nuevo-color-uno">
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-3">
                       <div class="ps-3">
@@ -76,8 +80,8 @@
     
                 </article>
               </div>
-              <div class="col-12 col-lg-4 p-2">
-                <article class="card shadow h-100 bg-primary">
+              <div class="col-12 col-lg-4 p-2"> <!--si yo pongo col solo sin breakpoint me toma mobile-->
+                <article class="card shadow h-100 nuevo-color-dos">
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-3">
                       <div class="ps-3">
@@ -93,7 +97,7 @@
                 </article>
               </div>
               <div class="col-12 col-lg-4 p-2">
-                <article class="card shadow h-100 bg-warning">
+                <article class="card shadow h-100 nuevo-color">
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-3">
                       <div class="ps-3">
