@@ -100,7 +100,7 @@
 
 .wrap {
     width: 1100px;
-    margin: 50px auto;
+    margin: 100px auto;
 
 }
 
@@ -116,7 +116,7 @@
 
 .tarjeta {
     width: 300px;
-    height: 350px;
+    height: 400px;
     background-color: #E9967A;
     position: relative;
     transform-style: preserve-3d;
@@ -154,12 +154,18 @@
 
 }
  
-.card1 {
-    background-image: cover;
+.card1 img { 
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+   
 }
 
 
-.card2 {
+.card2 img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
     background-image: cover;
    
 
