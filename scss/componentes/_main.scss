@@ -23,15 +23,6 @@
 
     background-image: url('../../fotos\ de\ productos/fondo1.jpg');
 
-
-    p {
-        font-family: $title-font;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        padding: 100px;
-    }
-
 }
 
 .porta-maceta {
@@ -284,7 +275,7 @@ transform: rotateY(180deg);
 
 .testimonial {
     background-color: #E9967A;
-    height: 50vh;
+    height: 36vh;
     font-family: $title-font;
 }
 
@@ -302,10 +293,10 @@ transform: rotateY(180deg);
  
 .img-text-index {
     width:100%;
-    height:400px;
+    height:300px;
     display: block;
     text-align: center;
-    padding: 30% 5%;
+    padding: 40% 5%;
     background: #262626;
     color:#fff;
     border-radius:15px;
