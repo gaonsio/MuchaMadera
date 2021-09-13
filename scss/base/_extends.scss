@@ -29,3 +29,11 @@
     background-color: #FEE140;
     background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
 }
+
+%atras {
+    font: 20px bold $title-font;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,3 +1,21 @@
+/* mixin */
+
+@mixin prefijos-perspective ($propiedad) {
+    -webkit-perspective: $propiedad;
+    -moz-perspective: $propiedad;
+    -ms-perspective: $propiedad;
+    perspective: $propiedad;
+
+}
+
+@mixin prefijo-backface-visibility ($propiedad) {
+    -webkit-backface-visibility: $propiedad;
+    -moz-backface-visibility: $propiedad;
+    -ms-backface-visibility: $propiedad;
+    backface-visibility: $propiedad;
+
+}
+
 /* main index */
 /*busca tu producto button*/
 
@@ -16,6 +34,56 @@
 
 }
 
+.porta-maceta {
+    @extend %atras;
+    p {
+        font-size: 20px;
+      }
+
+}
+
+.combo-porta-maceta {
+    @extend %atras;
+      p {
+        font-size: 20px;
+      }
+}
+
+.huertero {
+    @extend %atras;
+    p {
+        font-size: 20px;
+      }
+
+}
+
+
+
+.perchero-repisa {
+
+    @extend %atras;
+    p {
+        font-size: 20px;
+      }
+    
+}
+
+.velador-1 {
+    @extend %atras;
+    p {
+        font-size: 20px;
+      }
+
+
+}
+
+.velador-2 {
+    @extend %atras;
+    p {
+        font-size: 20px;
+      }
+}
+
 .destacados-del-mes {
 
     font-family: $title-font;
@@ -27,7 +95,6 @@
     }
 
 }
-
 
 
 .productos {
@@ -105,12 +172,8 @@
 }
 
 .tarjeta-wrap {
-    -webkit-perspective: 800;
-    -moz-perspective: 800;
-    -ms-perspective: 800;
-    perspective: 800;
+    @include prefijos-perspective(800);
     font-family: $title-font;
-
 
 }
 
@@ -121,10 +184,10 @@
     position: relative;
     transform-style: preserve-3d;
     transition: .7s ease;
-    -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
-    -moz-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
-    -ms-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
-    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(10, 10, 10, 0.65);
+    -moz-box-shadow: 0px 10px 15px -5px rgba(10, 10, 10, 0.65);
+    -ms-box-shadow: 0px 10px 15px -5px rgba(10, 10, 10, 0.65);
+    box-shadow: 0px 10px 15px -5px rgba(10, 10, 10, 0.65);
 
 
 }
@@ -134,10 +197,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
+    @include prefijo-backface-visibility(hidden);
 
 }
 
@@ -153,12 +213,12 @@
 
 
 }
- 
-.card1 img { 
+
+.card1 img {
     width: 100%;
     object-fit: cover;
     object-position: center center;
-   
+
 }
 
 
@@ -167,7 +227,7 @@
     object-fit: cover;
     object-position: center center;
     background-image: cover;
-   
+
 
 }
 

@@ -266,6 +266,7 @@ aside {
   background-color: #8b7c82;
 }
 
+/* mixin */
 /* main index */
 /*busca tu producto button*/
 .busca-tu-producto {
@@ -277,6 +278,30 @@ aside {
   display: flex;
   justify-content: center;
   padding: 100px;
+}
+
+.porta-maceta p {
+  font-size: 20px;
+}
+
+.combo-porta-maceta p {
+  font-size: 20px;
+}
+
+.huertero p {
+  font-size: 20px;
+}
+
+.perchero-repisa p {
+  font-size: 20px;
+}
+
+.velador-1 p {
+  font-size: 20px;
+}
+
+.velador-2 p {
+  font-size: 20px;
 }
 
 .destacados-del-mes {
@@ -358,10 +383,10 @@ aside {
   position: relative;
   transform-style: preserve-3d;
   transition: 0.7s ease;
-  -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
-  -moz-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
-  -ms-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
-  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 0px 10px 15px -5px rgba(10, 10, 10, 0.65);
+  -moz-box-shadow: 0px 10px 15px -5px rgba(10, 10, 10, 0.65);
+  -ms-box-shadow: 0px 10px 15px -5px rgba(10, 10, 10, 0.65);
+  box-shadow: 0px 10px 15px -5px rgba(10, 10, 10, 0.65);
 }
 
 .adelante,
@@ -536,6 +561,14 @@ transform: rotateY(180deg);
 .destacados-del-mes h2, .nuestros-productosbt, .donde-estamos {
   background-color: #FEE140;
   background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+}
+
+.porta-maceta, .combo-porta-maceta, .huertero, .perchero-repisa, .velador-1, .velador-2 {
+  font: 20px bold "Architects Daughter", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*los mixin estan en el archivo _header.scss */
