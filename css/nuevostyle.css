@@ -112,19 +112,23 @@ a {
   background-image: url("../../fotos de productos/manosierradebanco.jpg");
   padding: 400px;
   border: 80px;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .nuestro-taller h1 {
   font-size: 30px;
-  text-align: center;
+  text-align: justify;
   padding: 20px;
   color: aliceblue;
+  background-attachment: fixed;
 }
 
-.nuestro-taller p {
+.texto-nosotros {
+  border: 1px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
   color: aliceblue;
   padding: 20px;
   font-size: 20px;
@@ -222,14 +226,16 @@ ul li {
   padding: 0;
 }
 
+/*
 header,
 section,
 footer,
 aside {
-  border: 1px solid darkgrey;
-  display: block;
-}
+    border: 1px solid darkgrey;
+    display: block;
 
+}
+*/
 .titulo-cabecera,
 .barra-de-menu,
 .nuestro-taller,
@@ -267,7 +273,7 @@ aside {
 }
 
 /* mixin que se usan en los main de casa seccion*/
-/* main index */
+/* Main index */
 /*busca tu producto button*/
 .busca-tu-producto {
   background-image: url("../../fotos de productos/fondo1.jpg");
@@ -434,10 +440,6 @@ aside {
   background-image: cover;
 }
 
-/* 
-transform: rotateY(180deg);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; */
 /*main nosotros */
 .donde-estamos h2 {
   font-size: 20;
