@@ -124,10 +124,10 @@ a {
   background-attachment: fixed;
 }
 
-.texto-nosotros {
+.nuestro-taller p {
   border: 1px;
   max-width: 100%;
-  margin: 0 auto;
+  /*margin:0 auto;*/
   display: block;
   color: aliceblue;
   padding: 20px;
@@ -244,6 +244,10 @@ aside {
 .header-FAQ,
 .titulo-login {
   font-family: "Architects Daughter", cursive;
+}
+
+.footer-index, .footer-nosotros, .footer-login, .footer-faq, .footer-producto {
+  font-family: "Montserrat", sans-serif;
 }
 
 /* FOOTER INDEXHTML */
@@ -453,7 +457,8 @@ aside {
   padding: 30px;
 }
 
-/* main login */
+/* MAIN LOGIN */
+/*carousel testimonial*/
 .testimonial {
   background-color: #E9967A;
   height: 36vh;
@@ -537,6 +542,19 @@ aside {
 
 .carousel-indicators .active {
   background: #fff;
+}
+
+/*formulario login */
+.body-form-login {
+  font-family: monospace;
+  background-color: #E9967A;
+  color: #fff;
+}
+
+.encabezado-form {
+  text-align: center;
+  font-size: 45px;
+  border-bottom: 2px dotted #fff;
 }
 
 /* body login */

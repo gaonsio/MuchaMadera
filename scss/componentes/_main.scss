@@ -268,7 +268,9 @@
     }
 }
 
-/* main login */
+/* MAIN LOGIN */
+
+/*carousel testimonial*/
 
 .testimonial {
     background-color: #E9967A;
@@ -358,3 +360,19 @@
  .carousel-indicators .active {
      background: #fff;
  }
+
+ /*formulario login */
+
+ .body-form-login {
+     font-family: monospace;
+     background-color: #E9967A;
+     color:#fff;
+ }
+
+ .encabezado-form {
+     text-align:center;
+     font-size:45px;
+     border-bottom: 2px dotted #fff;
+
+ }
+
