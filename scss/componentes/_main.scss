@@ -273,7 +273,7 @@
 /*carousel testimonial*/
 
 .testimonial {
-    background-color: #E9967A;
+    
     height: 36vh;
     font-family: $title-font;
 }
@@ -376,3 +376,22 @@
 
  }
 
+.contenedor-formulario h2 {
+    text-align:center;
+     p {
+         text-align: center;
+     }
+
+}
+
+.btn-info {
+    width:50%;
+    letter-spacing: 2px;
+    background:transparent; 
+    transition: all 50ms ease-in-out;
+}
+
+.btn-info:hover {
+    transform:scale(1.05)
+
+}

@@ -110,10 +110,12 @@ a {
 /*Header nosotros */
 .header-nosotros {
   background-image: url("../../fotos de productos/manosierradebanco.jpg");
-  padding: 400px;
+  height: 100vh;
+  width: auto;
   border: 80px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 0 .header-nosotros;
 }
 
 .nuestro-taller h1 {
@@ -127,10 +129,10 @@ a {
 .nuestro-taller p {
   border: 1px;
   max-width: 100%;
-  /*margin:0 auto;*/
+  margin: 0 auto;
   display: block;
   color: aliceblue;
-  padding: 20px;
+  padding: 40px;
   font-size: 20px;
 }
 
@@ -460,7 +462,6 @@ aside {
 /* MAIN LOGIN */
 /*carousel testimonial*/
 .testimonial {
-  background-color: #E9967A;
   height: 36vh;
   font-family: "Architects Daughter", cursive;
 }
@@ -555,6 +556,24 @@ aside {
   text-align: center;
   font-size: 45px;
   border-bottom: 2px dotted #fff;
+}
+
+.contenedor-formulario h2 {
+  text-align: center;
+}
+.contenedor-formulario h2 p {
+  text-align: center;
+}
+
+.btn-info {
+  width: 50%;
+  letter-spacing: 2px;
+  background: transparent;
+  transition: all 50ms ease-in-out;
+}
+
+.btn-info:hover {
+  transform: scale(1.05);
 }
 
 /* body login */
