@@ -193,6 +193,7 @@
 
       </div>
     </section>
+    </main>
 
     <section class="body-form-login m-5">
       <!--form de contacto con JS-->
@@ -204,16 +205,23 @@
 <div class="row">
 
 <div class="col-md-6">
-<form action="">
-  <input  type="Text" required="" placeholder="Nombre" name="text" class="form-control mb-3">
+<form id="formulario">
+  <label for="nombre"> Nombre </label>
+  <input  type="Text"  id="nombre" required="" placeholder="Nombre" name="text" class="form-control mb-3">
 
-  <input type="Email" required="" placeholder="Email" name="email" class="form-control mb-3">
+  <label for="email"> Email </label>
+  <input type="Email" id="email" required="" placeholder="Email" name="email" class="form-control mb-3">
 
-  <input type="Number" required="" placeholder="Celular" name="telefono" class="form-control mb-3">
+  <label for="telefono"> Celular </label>
+  <input type="Number" id="telefono" required="" placeholder="Celular" name="telefono" class="form-control mb-3">
 
-<textarea class="form-control mb-3" placeholder="Consulta" required="" name="" id="" cols="30" rows="6"></textarea>
+<label for="mensaje"> Consulta </label>
+<textarea class="form-control mb-3" id="mensaje" placeholder="Consulta" required="" name="mensaje" id="" cols="30" rows="6"></textarea>
 
+<div>
 <button class="btn btn-info"> Enviar </button>
+
+</div>
 
 </form>
 </div>
@@ -236,18 +244,12 @@
 
 
 
-></div> <!--este es el cierre del div del row-->
+></div> <!--este es el cierre del div del row del formulario-->
 
+    </div> <!--este es el cierre del div del container del formulario-->
 
-
-
-
-
-    </div> <!--este es el cierre del div del container-->
-
-
-    </section>
-  </main>
+    </section> <!--este es el cierre del section del formulario-->
+  
 
   <!--footer!-->
 
