@@ -26,9 +26,9 @@ form.addEventListener('submit' , (event) => {
 function sender (nombre, telefono, email, mensaje) { 
 
     Email.send({
-        SecureToken: '', // Token de seguridad que sacamos de smtp.js
-        To: 'correo de destino', // el mail donde va a llegar la info o el mensaje
-        From: 'correo de origen', //el mail de donde se va a enviar el mensaje
+        SecureToken:'dc715478-acb9-413b-8844-124a3d8e66ed', // Token de seguridad que sacamos de smtpjs.com
+        To: 'muchamaderaok@gmail.com', // el mail donde va a llegar la info o el mensaje
+        From: 'muchamaderaok@gmail.com', //el mail de donde se va a enviar el mensaje
         // q tiene que ser el mismo con el generamos el token
         Subject: `${nombre} Te envio un mensaje por la web`,  
         Body: `
@@ -41,7 +41,13 @@ function sender (nombre, telefono, email, mensaje) {
         message => swal("Mensaje enviado correctamente!", "En breve nos pondremos en contacto!", "success")
     )
     .catch(
-        error => swal("Error al enviar!", "Volve a probar mas tarde!", "error"))
+        error => swal("Ups hubo un error en el envío", "Por favor, volve a probar mas tarde!", "error"))
 
 
 }
+
+
+
+
+
+
