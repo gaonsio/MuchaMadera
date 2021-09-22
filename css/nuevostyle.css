@@ -470,7 +470,7 @@ aside {
 /* MAIN LOGIN */
 /*carousel testimonial*/
 .testimonial {
-  height: 150vh;
+  height: 150%;
   font-family: "Architects Daughter", cursive;
 }
 
