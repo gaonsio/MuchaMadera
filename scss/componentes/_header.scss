@@ -82,6 +82,92 @@ animation-name: aparecer; */
     
  /* barra de menu index  */    
     
+
+
+.nav-index { 
+height: 75px;
+width:100%;
+background-color: #E9967A;
+display: flex;
+justify-content: space-between;
+
+}
+
+.logo-container {
+    display:flex;
+    align-items: center;
+    width: auto;
+    margin: 0;
+}
+
+.logo-mm {
+    margin-left: 20px;
+}
+
+.logo-txt {
+    font-size: 30px;
+    line-height: 75px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.nav-list {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top:75px;
+    background: #E9967A ;
+    float: right;
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-list li {
+    opacity: 0;
+    line-height: 30px;
+    margin:50px 0;
+    transition: all .5s;
+
+}
+
+.nav-list li a {
+    color: whitesmoke;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.nav-list a.active, .nav-list li a:hover {
+    color: #F08080;
+    transition: 0.5s;
+}
+
+.hamburger-btn {
+    display: block;
+    font-size: 30px;
+    color: whitesmoke;
+    float: right;
+    line-height: 75px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#check { 
+    display: none;
+}
+
+#check:checked ~ .nav-list {
+height: 100vh;
+
+}
+
+
+#check:checked ~ .nav-list li {
+    opacity: 1;
+    
+    }
+
+ /*
     .barra-de-menu-index { 
        @extend %header-armado; 
     }
@@ -112,6 +198,8 @@ animation-name: aparecer; */
     }
     
     /* submenu */
+
+    /*
     ul ul {
         position: absolute;
         display: none;
@@ -143,7 +231,7 @@ animation-name: aparecer; */
         display: block;
         text-decoration: none;
     
-    }
+    } */
 
     /*Header nosotros */ 
 
