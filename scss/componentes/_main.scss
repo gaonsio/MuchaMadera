@@ -88,7 +88,7 @@
 
 }
 
-
+/*
 .productos {
     display: flex;
     flex-direction: row;
@@ -119,10 +119,11 @@
     overflow: hidden;
 }
 
-
+*/
 
 /*query mobile */
 
+/*
 @media only screen and (max-width:576px) {
     .productos {
         display: block;
@@ -132,6 +133,8 @@
 
 
 }
+
+*/
 
 /* main FAQ */
 
@@ -274,7 +277,7 @@
 
 .testimonial {
     
-    height: 36vh;
+    height: 150vh;
     font-family: $title-font;
 }
 

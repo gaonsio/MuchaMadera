@@ -317,43 +317,51 @@ aside {
   padding: 50px;
 }
 
+/*
 .productos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .productos:hover .perchero-transform {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .productos:hover .macetas-transform {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .productos:hover .porta-maceta-transform {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .productos:hover .huertas-balcon-transform {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .productos {
-  overflow: hidden;
+    overflow: hidden;
 }
 
+*/
 /*query mobile */
-@media only screen and (max-width: 576px) {
-  .productos {
-    display: block;
-    flex-direction: column;
-  }
+/*
+@media only screen and (max-width:576px) {
+    .productos {
+        display: block;
+        flex-direction: column;
+
+    }
+
+
 }
+
+*/
 /* main FAQ */
 .nuevo-color {
   background-color: #F08080;
@@ -462,7 +470,7 @@ aside {
 /* MAIN LOGIN */
 /*carousel testimonial*/
 .testimonial {
-  height: 36vh;
+  height: 150vh;
   font-family: "Architects Daughter", cursive;
 }
 
