@@ -157,7 +157,14 @@
 /*main productobt */
 
 .nuestros-productosbt {
+    
     @extend %grid;
+
+    h2 {
+        text-align: center;
+        padding: 50px;
+      
+    }
 }
 
 .wrap {
