@@ -1,46 +1,4 @@
 /* FOOTER INDEXHTML */
 
 
-.footer-index {
-    background-color: rgb(139, 124, 130);
-}
-
-.footer-index i {
-    padding: 15px;
-
-    ul {
-        
-      @extend %footer;
-    }
-
-    p {
-        text-align: center;
-    }
-
-}
-
-.barra-de-menu-footer { 
-    @extend %footer;
-    background-color: rgb(139, 124, 130);
-}
-
-/* footer nosotros */ 
-
-#footer-nosotros li {
-  @extend %footer;
-}
-
-#footer-nosotros {
-    background-color: grey;
-}
-
-/*footer faq*/ 
-
-.footer-faq { 
-    background-color: rgb(139, 124, 130);
-}
-
-.barra-de-menu-footer-faq {
-    @extend %footer;
-}
 

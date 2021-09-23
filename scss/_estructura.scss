@@ -3,6 +3,11 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Architects Daughter', cursive;
+
 
 }
 
@@ -17,17 +22,4 @@ aside {
 }
 */ 
 
-.titulo-cabecera,
-.barra-de-menu,
-.nuestro-taller,
-.destacados-del-mes,
-.donde-estamos,
-.header-FAQ,
-.titulo-login {
-    font-family: 'Architects Daughter', cursive;
 
-}
-
-.footer-index, .footer-nosotros, .footer-login, .footer-faq, .footer-producto {
-    font-family: $title-font2;
-} 
