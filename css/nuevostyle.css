@@ -432,11 +432,13 @@ aside {
 }
 
 /*main productobt */
+/*divisor del header-carousel nuestros productos*/
 .nuestros-productosbt h2 {
   text-align: center;
   padding: 50px;
 }
 
+/* comienzo cards 3d */
 .wrap {
   width: 1100px;
   margin: 100px auto;

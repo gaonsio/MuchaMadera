@@ -156,6 +156,8 @@
 
 /*main productobt */
 
+/*divisor del header-carousel nuestros productos*/ 
+
 .nuestros-productosbt {
     
     @extend %grid;
@@ -166,6 +168,9 @@
       
     }
 }
+
+
+/* comienzo cards 3d */ 
 
 .wrap {
     width: 1100px;
