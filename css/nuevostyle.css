@@ -70,6 +70,7 @@ animation-name: aparecer; */
 
 .logo-mm {
   margin-left: 20px;
+  border-radius: 10px;
 }
 
 .logo-txt {
@@ -105,13 +106,13 @@ animation-name: aparecer; */
 }
 
 .nav-list a.active, .nav-list li a:hover {
-  color: #F08080;
+  color: #7a7979;
   transition: 0.5s;
 }
 
 .hamburger-btn {
   display: block;
-  font-size: 30px;
+  font-size: 20px;
   color: whitesmoke;
   float: right;
   line-height: 75px;
@@ -124,13 +125,15 @@ animation-name: aparecer; */
 }
 
 #check:checked ~ .nav-list {
-  height: 100vh;
+  height: 90%;
+  z-index: 1;
 }
 
 #check:checked ~ .nav-list li {
   opacity: 1;
 }
 
+/* media para desktop */
 /*
    .barra-de-menu-index { 
       @extend %header-armado; 
