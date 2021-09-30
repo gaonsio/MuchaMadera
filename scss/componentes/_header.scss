@@ -45,6 +45,19 @@ header { border: $bordes;
 }
 
 
+/*nav bar index  color*/ 
+
+.bg-color {
+    background: #E9967A;
+}
+
+
+.nav-item,
+.color-nav {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
 .logo-mucha-madera {    
      @extend %header-armado;
 
@@ -80,39 +93,24 @@ animation-name: aparecer; */
     }
     }
     
- /* barra de menu index  */    
+ /* todos los nav bar  */    
     
 
-
-.nav-index { 
-height: 75px;
-width:100%;
-background-color: #E9967A;
-display: flex;
-justify-content: space-between;
-
-}
-
-.logo-container {
-    display:flex;
-    align-items: center;
-    width: auto;
-    margin: 0;
-}
-
 .logo-mm {
-    margin-left: 20px;
+    
     border-radius: 10px;
 }
 
+
+
 .logo-txt {
-    font-size: 30px;
-    line-height: 75px;
-    padding-left: 10px;
+    margin-left: 10px;
+    font-size: 30px;  
     font-weight: bold;
     color: whitesmoke;
 }
 
+/*
 .nav-list {
     position:fixed;
     width: 100%;
@@ -149,7 +147,7 @@ justify-content: space-between;
     color: whitesmoke;
     float: right;
     line-height: 75px;
-    margin-right: 40px;
+    margin-right: 5%;
     cursor: pointer;
 }
 
@@ -168,6 +166,8 @@ z-index: 1;
     opacity: 1;
     
     }
+
+    */ 
 
 /* media para desktop */
 
@@ -250,7 +250,7 @@ z-index: 1;
     border: 80px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 0&;
+    background-position: 50% 0%;
 }
     
 .nuestro-taller h1 {

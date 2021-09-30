@@ -49,29 +49,37 @@
 <body class="body-login">
 
   <header class="header-index">
+  <nav class="navbar navbar-light bg-color esconder " aria-label="First navbar example">
+    <div class="container-fluid">
+        <div class= "d-flex justify-content-start">
+            <img class="logo-mm" src="fotos de productos/logoMM.png" width="75px" alt="logo mucha madera">
+            <label class="logo-txt">Mucha Madera </label>
+          </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-  </div>
-  <nav class="nav-index">
-      <div class="logo-container">
-          <img class="logo-mm" src="fotos de productos/logoMM.png" width="75px" alt="logo mucha madera">
-
-          <label class="logo-txt">Mucha Madera </label>
-
-      </div>
-
-      <input type="checkbox" id="check">
-      <label for="check" class="hamburger-btn">
-          <i class="fas fa-bars"></i>
-      </label>
-      <ul class="nav-list">
-          <li> <a class="active" href="nosotros.html"> NOSOTROS</a></li>
-          <li> <a href="productobt.html"> PRODUCTOS</a></li>
-          <li> <a href="preguntasfrecuentes.html">PREGUNTAS FRECUENTES </a></li>
-          <li> <a href="index.html"> INICIO </a></li>
-      </ul>
-
-
-  </nav>
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+            <ul class="navbar-nav me-auto mb-2">
+                <li class="nav-item">
+                    <a class="color-nav active" aria-current="page" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="color-nav" href="productobt.html">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="color-nav" aria-current="page" href="preguntasfrecuentes.html">PREGUNTAS
+                        FRECUENTES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="color-nav" aria-current="page" href="index.html">INICIO</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 </header>
 
 
@@ -93,7 +101,7 @@
 
   <!--Carousel Cross Fade Bootstrap-->
   <main>
-    <section class="testimonial">
+    <section class="testimonial mt-5">
       <div class="container m-auto titulo-testimonial">
         <div class="row">
           <div class="col-md-12">
@@ -221,7 +229,7 @@
 <textarea class="form-control mb-3" id="mensaje" placeholder="Consulta" required="" name="mensaje" id="" cols="30" rows="6"></textarea>
 
 <div>
-<button class="btn btn-info"> Enviar </button>
+<button class="btn btn-info mb-3"> Enviar </button>
 
 </div>
 
