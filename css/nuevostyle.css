@@ -39,24 +39,22 @@
   -o-animation-name: aparecer;
   -moz-animation-name: aparecer;
   animation-name: aparecer;
-  font-size: 90px;
+  font-size: 5rem;
   padding: 80px;
   text-align: center;
 }
 
 /* MQ para que no se rompa con dispositivos menos de 576*/
-@media only screen and (min-widht: 460px) {
-  .titulo-cabecera {
+@media only screen and (max-widht: 460px) {
+  .titulo-mucha-madera h1 {
     display: flex;
     flex-direction: column;
-    font-size: 50px;
+    font-size: 2rem;
+    color: lightcoral;
   }
-}
-@media only screen and (max-widht: 576px) {
-  .logo-txt {
-    font-size: 5px;
-    color: aqua;
-    text-align: center;
+
+  .titulo-cabecera {
+    font-size: 2rem;
   }
 }
 /* animation-duration: 3s;
