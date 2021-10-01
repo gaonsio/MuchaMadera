@@ -1,4 +1,4 @@
-/* mixin que se usan en los main de casa seccion*/
+/* mixin que se usan en los main de casa section*/
 
 @mixin prefijos-perspective ($propiedad) {
     -webkit-perspective: $propiedad;
@@ -18,13 +18,14 @@
 
 /* Main index */
 
-/*busca tu producto button*/
+
 
 .busca-tu-producto {
 
     background-image: url('../../fotos\ de\ productos/fondo1.jpg');
 
 }
+
 
 .porta-maceta {
     @extend %atras;

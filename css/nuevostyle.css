@@ -9,6 +9,17 @@
 }
 
 /*nav bar index  color*/
+.logo-mm:hover {
+  -webkit-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
 .bg-color {
   background: #E9967A;
 }
@@ -30,6 +41,30 @@
   color: whitesmoke;
 }
 
+/* banner cabecera */
+.one-more-time {
+  display: flex;
+  display: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-mucha-madera {
+  border-radius: 20px;
+  width: 10rem;
+}
+
+.logo-mucha-madera:hover {
+  -webkit-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
 .titulo-cabecera {
   -webkit-animation-duration: 3s;
   -o-animation-duration: 3s;
@@ -45,6 +80,13 @@
 }
 
 /* MQ para que no se rompa con dispositivos menos de 576*/
+@media only screen and (max-width: 460px) {
+  .one-more-time {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+  }
+}
 @media only screen and (max-width: 460px) {
   .titulo-mucha-madera h1 {
     display: flex;
@@ -116,9 +158,8 @@ animation-name: aparecer; */
 }
 
 /* FOOTER INDEXHTML */
-/* mixin que se usan en los main de casa seccion*/
+/* mixin que se usan en los main de casa section*/
 /* Main index */
-/*busca tu producto button*/
 .busca-tu-producto {
   background-image: url("../../fotos de productos/fondo1.jpg");
 }

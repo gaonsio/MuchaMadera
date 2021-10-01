@@ -36,6 +36,11 @@
 
 /*nav bar index  color*/
 
+
+.logo-mm:hover {
+    @include prefijos-transform (rotateY(180deg), preserve-3d);
+}
+
 .bg-color {
     background: #E9967A;
 }
@@ -60,7 +65,26 @@
     color: whitesmoke;
 }
 
+ /* banner cabecera */ 
 
+ 
+ .one-more-time {
+     display: flex;
+     display: row;
+     justify-content:center;
+     align-items: center;
+     
+ }
+
+ .logo-mucha-madera {
+     border-radius: 20px;
+     width: 10rem;
+ }
+
+ .logo-mucha-madera:hover {
+    @include prefijos-transform(rotateY(180deg),preserve-3d);
+
+ }
 
 .titulo-cabecera {
     @include prefijos-animation(3s, aparecer);
@@ -74,7 +98,7 @@
 /* MQ para que no se rompa con dispositivos menos de 576*/
 
 @media only screen and  (max-width:460px) {
-    .titulo-mucha-madera h1 {
+    .one-more-time {
         display: flex;
         flex-direction: column;
         font-size: 3rem;
@@ -84,6 +108,15 @@
 } 
 
 
+@media only screen and  (max-width:460px) {
+    .titulo-mucha-madera h1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+    }
+        
+  
+} 
 
 
 
