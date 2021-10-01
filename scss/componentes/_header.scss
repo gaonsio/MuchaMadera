@@ -47,31 +47,49 @@
     font-size: 20px;
 }
 
-.logo-mucha-madera {
-    @extend %header-armado;
 
-    img {
-        @extend %logo;
-    }
+.logo-mm {
 
+    border-radius: 10px;
 }
 
-.logo:hover {
-    @include prefijos-transform (rotateY(180deg), preserve-3d);
 
-}
-
-.titulo-mucha-madera {
-    max-width:100%; 
+.logo-txt {
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: whitesmoke;
 }
 
 .titulo-cabecera {
     @include prefijos-animation(3s, aparecer);
-    font-size: 80px;
+    font-size: 90px;
     padding: 80px;
     text-align: center;
     
 }
+
+
+/* MQ para que no se rompa con dispositivos menos de 576*/
+
+@media only screen and  (min-widht:460px) {
+    .titulo-cabecera {
+        display: flex;
+        flex-direction: column;
+        font-size: 50px;
+    }
+
+} 
+
+@media only screen and (max-widht:576px) {
+    .logo-txt {
+        font-size: 5px;
+        color:aqua; 
+        text-align: center;
+    }
+}
+
+
 
 
 /* animation-duration: 3s;
@@ -87,39 +105,8 @@ animation-name: aparecer; */
     }
 }
 
-/* todos los nav bar  */
 
 
-.logo-mm {
-
-    border-radius: 10px;
-}
-
-
-.logo-txt {
-    margin-left: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    color: whitesmoke;
-}
-
-/* MQ para que no se rompa con dispositivos menos de 576*/
-
-@media only screen and (max-widht:576px) {
-    .barra-de-menu-index {
-        display: flex;
-        flex-direction: column-reverse; 
-    }
-
-} 
-
-@media only screen and (max-widht:576px) {
-    .logo-txt {
-        font-size: 5px;
-        color:aqua; 
-        text-align: center;
-    }
-}
 
 
 
@@ -174,40 +161,11 @@ animation-name: aparecer; */
 /*HEADER PRODUCTOBT */
 
 
-.titulo-cabecera-producto {
-    @extend %header-armado;
-
-    h1 {
-        @include prefijos-animation(3s, aparecer);
-        font-size: 100px;
-        padding: 80px;
-        text-align: center;
-        border-radius: 16px;
-    }
-
-    img {
-        @extend %logo;
-    }
-
-}
-
-.titulo-cabecera-producto:hover img {
-    @include prefijos-transform(rotateY(180deg), preserve-3d)
-}
 
 
-.barra-de-menu-productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
 
-    ul li {
-        font-family: $title-font;
-        font-weight: bold;
-        word-spacing: 10px;
-    }
-}
+
+
 
 
 /*HEADER LOGIN */
@@ -215,7 +173,3 @@ animation-name: aparecer; */
 
 /* BARRA DE MENU LOGIN */
 
-
-.barra-de-menu-login {
-    @extend %header-armado;
-}
