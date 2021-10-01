@@ -1,4 +1,4 @@
-@import '../variables'; 
+@import '../variables';
 
 /*mixin */
 
@@ -6,35 +6,24 @@
     -webkit-transform: $propiedad;
     -o-transform: $propiedad;
     -moz-transform: $propiedad;
-    transform:$propiedad;
-    -webkit-transform-style:$propiedad2;
+    transform: $propiedad;
+    -webkit-transform-style: $propiedad2;
     -o-transform-style: $propiedad2;
     -moz-transform-style: $propiedad2;
-    transform-style:$propiedad2;
+    transform-style: $propiedad2;
 }
 
-@mixin prefijos-animation ($propiedad1, $propiedad2) { 
--webkit-animation-duration: $propiedad1;
--o-animation-duration: $propiedad1;
--moz-animation-duration: $propiedad1;
-animation-duration:$propiedad1;
--webkit-animation-name:$propiedad2;
--o-animation-name:$propiedad2;
--moz-animation-name:$propiedad2;
-animation-name:$propiedad2;
+@mixin prefijos-animation ($propiedad1, $propiedad2) {
+    -webkit-animation-duration: $propiedad1;
+    -o-animation-duration: $propiedad1;
+    -moz-animation-duration: $propiedad1;
+    animation-duration: $propiedad1;
+    -webkit-animation-name: $propiedad2;
+    -o-animation-name: $propiedad2;
+    -moz-animation-name: $propiedad2;
+    animation-name: $propiedad2;
 }
 
-
-
-/* animation-duration: 3s;
-animation-name: aparecer; */
-
-/* todos los Header  */
-
-header { border: $bordes;
-    font-family: $title-font;
-
-}
 
 /*IMAGEN HEADER INDEX */
 
@@ -45,7 +34,7 @@ header { border: $bordes;
 }
 
 
-/*nav bar index  color*/ 
+/*nav bar index  color*/
 
 .bg-color {
     background: #E9967A;
@@ -58,26 +47,30 @@ header { border: $bordes;
     font-size: 20px;
 }
 
-.logo-mucha-madera {    
-     @extend %header-armado;
+.logo-mucha-madera {
+    @extend %header-armado;
 
- img { 
-   @extend %logo;
+    img {
+        @extend %logo;
+    }
+
 }
-
-} 
 
 .logo:hover {
-@include prefijos-transform (rotateY(180deg),preserve-3d); 
+    @include prefijos-transform (rotateY(180deg), preserve-3d);
 
 }
 
-.titulo-cabecera { 
-  @include prefijos-animation(3s,aparecer);
-    font-size: 100px;
+.titulo-mucha-madera {
+    max-width:100%; 
+}
+
+.titulo-cabecera {
+    @include prefijos-animation(3s, aparecer);
+    font-size: 80px;
     padding: 80px;
     text-align: center;
-    border-radius: 16px;
+    
 }
 
 
@@ -85,256 +78,121 @@ header { border: $bordes;
 animation-name: aparecer; */
 
 @keyframes aparecer {
-    0% { 
+    0% {
         opacity: 0;
     }
+
     100% {
-        opacity: 1; 
+        opacity: 1;
     }
-    }
-    
- /* todos los nav bar  */    
-    
+}
+
+/* todos los nav bar  */
+
 
 .logo-mm {
-    
+
     border-radius: 10px;
 }
 
 
-
 .logo-txt {
     margin-left: 10px;
-    font-size: 30px;  
+    font-size: 30px;
     font-weight: bold;
     color: whitesmoke;
 }
 
-/*
-.nav-list {
-    position:fixed;
-    width: 100%;
-    height: 0vh;
-    top:75px;
-    background: #E9967A ;
-    float: right;
-    text-align: center;
-    transition: all .5s;
-}
+/* MQ para que no se rompa con dispositivos menos de 576*/
 
-.nav-list li {
-    opacity: 0;
-    line-height: 30px;
-    margin:50px 0;
-    transition: all .5s;
-
-}
-
-.nav-list li a {
-    color: whitesmoke;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-.nav-list a.active, .nav-list li a:hover {
-    color: #7a7979;
-    transition: 0.5s;
-}
-
-.hamburger-btn {
-    display: block;
-    font-size: 20px;
-    color: whitesmoke;
-    float: right;
-    line-height: 75px;
-    margin-right: 5%;
-    cursor: pointer;
-}
-
-#check { 
-    display: none;
-}
-
-#check:checked ~ .nav-list {
-height: 90%;
-z-index: 1;
-
-}
-
-
-#check:checked ~ .nav-list li {
-    opacity: 1;
-    
+@media only screen and (max-widht:576px) {
+    .barra-de-menu-index {
+        display: flex;
+        flex-direction: column-reverse; 
     }
 
-    */ 
+} 
 
-/* media para desktop */
-
-
-
-
- /*
-    .barra-de-menu-index { 
-       @extend %header-armado; 
-    }
-
-    @media only screen and (max-widht:576px) {
-        .barra-de-menu-index {
-            flex-direction:column; 
-            display:flex;
-        }
-    
-    }
-    
-    .barra-de-menu ul {
-        list-style: none;
-        font: size 0;
-    }
-    
-    li {
-        display: inline-block;
-        width: 15%;
-        position: relative;
-        font-size: 15px;
-        list-style: none;
-        padding: 2 em;
-        margin: 2rem;
-        word-spacing: 2px;
+@media only screen and (max-widht:576px) {
+    .logo-txt {
+        font-size: 5px;
+        color:aqua; 
         text-align: center;
     }
-    
-    /* submenu */
+}
 
-    /*
-    ul ul {
-        position: absolute;
-        display: none;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 1.5s;
-    }
-    
-    ul ul li {
-        display: block;
-        text-align: center;
-    }
-    
-    li:hover ul {
-        display: block;
-        text-decoration: underline;
-        visibility: visible;
-        opacity: 1;
-    
-    }
-    
-    .barra-de-menu li a:hover {
-        text-decoration: underline;
-    
-    }
-    
-    a {
-        color: black;
-        display: block;
-        text-decoration: none;
-    
-    } */
 
-    /*Header nosotros */ 
+
+
+/*Header nosotros */
 
 
 .header-nosotros {
     background-image: url('../../fotos\ de\ productos/manosierradebanco.jpg');
-    height:100vh;
-    width:auto;
+    height: 100vh;
+    width: auto;
     border: 80px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0%;
 }
-    
+
 .nuestro-taller h1 {
     font-size: 30px;
-    text-align:justify;
+    text-align: justify;
     padding: 20px;
     color: aliceblue;
     background-attachment: fixed;
-    
+
 }
 
 .nuestro-taller p {
     border: 1px;
-    max-width:100%;
-    margin:0 auto;
+    max-width: 100%;
+    margin: 0 auto;
     display: block;
     color: aliceblue;
     padding: 40px;
-    font-size: 20px;  
-    
-}
-  
+    font-size: 20px;
 
-
-/*header Faq*/ 
-
-.header-faq img { 
-    @extend %logo;
-}
-
-.logo-mm:hover { 
-   @include prefijos-transform (rotateY(180deg),preserve-3d); 
-}
-
-.header-faq nav {
-    text-align: center;
-    font-family: $title-font;
-}
-
-h1 {
-    @include prefijos-animation(3s,aparecer);
-    font-size: 100px;
-    padding: 80px;
-    text-align: center;
-    border-radius: 16px;
-}
-
-ul li {
-    list-style: none;
-    font-family: 'Montserrat', sans-serif;
-    display: inline-block;
-    word-spacing: 20px;
-    text-align: center;
-    text-decoration: none;
-    padding: 30px;
-}
-
-.barra-de-menu-faq {
-    position: sticky;
-    top: 0;
 }
 
 
-/*HEADER PRODUCTOBT */ 
+
+/*header Faq*/
 
 
-.titulo-cabecera-producto  {    
-   @extend %header-armado;
-
-   h1 {
-    @include prefijos-animation(3s,aparecer);
-    font-size: 100px;
-    padding: 80px;
-    text-align: center;
-    border-radius: 16px;
-   }
- img { 
-   @extend %logo; 
+.logo-mm:hover {
+    @include prefijos-transform (rotateY(180deg), preserve-3d);
 }
- 
-} 
+
+
+
+
+
+
+/*HEADER PRODUCTOBT */
+
+
+.titulo-cabecera-producto {
+    @extend %header-armado;
+
+    h1 {
+        @include prefijos-animation(3s, aparecer);
+        font-size: 100px;
+        padding: 80px;
+        text-align: center;
+        border-radius: 16px;
+    }
+
+    img {
+        @extend %logo;
+    }
+
+}
 
 .titulo-cabecera-producto:hover img {
-    @include prefijos-transform(rotateY(180deg),preserve-3d)
+    @include prefijos-transform(rotateY(180deg), preserve-3d)
 }
 
 
@@ -343,6 +201,7 @@ ul li {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
+
     ul li {
         font-family: $title-font;
         font-weight: bold;
@@ -356,7 +215,7 @@ ul li {
 
 /* BARRA DE MENU LOGIN */
 
- 
-.barra-de-menu-login { 
-  @extend %header-armado; 
+
+.barra-de-menu-login {
+    @extend %header-armado;
 }

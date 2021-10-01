@@ -1,7 +1,15 @@
 /*mixin */
-/*IMAGEN HEADER INDEX */
+/* animation-duration: 3s;
+animation-name: aparecer; */
+/* todos los Header  */
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Rock+Salt&display=swap");
+header {
+  border: 1px solid darkgrey;
+  font-family: "Architects Daughter", cursive;
+}
+
+/*IMAGEN HEADER INDEX */
 .header-index {
   background-image: url("../../fotos de productos/headerindex.jpg");
   background-size: cover;
@@ -30,10 +38,6 @@
   transform-style: preserve-3d;
 }
 
-.titulo-mucha-madera {
-  max-width: 100%;
-}
-
 .titulo-cabecera {
   -webkit-animation-duration: 3s;
   -o-animation-duration: 3s;
@@ -43,9 +47,10 @@
   -o-animation-name: aparecer;
   -moz-animation-name: aparecer;
   animation-name: aparecer;
-  font-size: 80px;
+  font-size: 100px;
   padding: 80px;
   text-align: center;
+  border-radius: 16px;
 }
 
 /* animation-duration: 3s;
@@ -70,20 +75,129 @@ animation-name: aparecer; */
   color: whitesmoke;
 }
 
-/* MQ para que no se rompa con dispositivos menos de 576*/
-@media only screen and (max-widht: 576px) {
-  .barra-de-menu-index {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-@media only screen and (max-widht: 576px) {
-  .logo-txt {
-    font-size: 5px;
-    color: aqua;
+/*
+.nav-list {
+    position:fixed;
+    width: 100%;
+    height: 0vh;
+    top:75px;
+    background: #E9967A ;
+    float: right;
     text-align: center;
-  }
+    transition: all .5s;
 }
+
+.nav-list li {
+    opacity: 0;
+    line-height: 30px;
+    margin:50px 0;
+    transition: all .5s;
+
+}
+
+.nav-list li a {
+    color: whitesmoke;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.nav-list a.active, .nav-list li a:hover {
+    color: #7a7979;
+    transition: 0.5s;
+}
+
+.hamburger-btn {
+    display: block;
+    font-size: 20px;
+    color: whitesmoke;
+    float: right;
+    line-height: 75px;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+#check { 
+    display: none;
+}
+
+#check:checked ~ .nav-list {
+height: 90%;
+z-index: 1;
+
+}
+
+
+#check:checked ~ .nav-list li {
+    opacity: 1;
+
+    }
+
+    */
+/* media para desktop */
+/*
+   .barra-de-menu-index { 
+      @extend %header-armado; 
+   }
+
+   @media only screen and (max-widht:576px) {
+       .barra-de-menu-index {
+           flex-direction:column; 
+           display:flex;
+       }
+
+   }
+
+   .barra-de-menu ul {
+       list-style: none;
+       font: size 0;
+   }
+
+   li {
+       display: inline-block;
+       width: 15%;
+       position: relative;
+       font-size: 15px;
+       list-style: none;
+       padding: 2 em;
+       margin: 2rem;
+       word-spacing: 2px;
+       text-align: center;
+   }
+
+   /* submenu */
+/*
+ul ul {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+ul ul li {
+    display: block;
+    text-align: center;
+}
+
+li:hover ul {
+    display: block;
+    text-decoration: underline;
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.barra-de-menu li a:hover {
+    text-decoration: underline;
+
+}
+
+a {
+    color: black;
+    display: block;
+    text-decoration: none;
+
+} */
 /*Header nosotros */
 .header-nosotros {
   background-image: url("../../fotos de productos/manosierradebanco.jpg");
@@ -123,6 +237,41 @@ animation-name: aparecer; */
   -o-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
+}
+
+.header-faq nav {
+  text-align: center;
+  font-family: "Architects Daughter", cursive;
+}
+
+h1 {
+  -webkit-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+  -o-animation-name: aparecer;
+  -moz-animation-name: aparecer;
+  animation-name: aparecer;
+  font-size: 100px;
+  padding: 80px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+ul li {
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  word-spacing: 20px;
+  text-align: center;
+  text-decoration: none;
+  padding: 30px;
+}
+
+.barra-de-menu-faq {
+  position: sticky;
+  top: 0;
 }
 
 /*HEADER PRODUCTOBT */
@@ -174,6 +323,16 @@ animation-name: aparecer; */
   font-family: "Architects Daughter", cursive;
 }
 
+/*
+header,
+section,
+footer,
+aside {
+    border: 1px solid darkgrey;
+    display: block;
+
+}
+*/
 /* FOOTER INDEXHTML */
 /* mixin que se usan en los main de casa seccion*/
 /* Main index */
@@ -583,7 +742,7 @@ animation-name: aparecer; */
 
 /* Extends */
 /*los Extends lo use en los archivos _footer y _header */
-.logo-mucha-madera img, .titulo-cabecera-producto img {
+.logo-mucha-madera img, .header-faq img, .titulo-cabecera-producto img {
   height: 10em;
   width: 8em;
   border-radius: 1em;
